@@ -1,14 +1,9 @@
 {
-    "name": "klarna/kco_rest",
-    "description": "Official Klarna REST PHP SDK",
-    "homepage": "http://developers.klarna.com",
+    "name": "centarro/kco_rest",
+    "description": "Community maintained Klarna PHP SDK",
+    "homepage": "https://github.com/centarro/kco_rest_php",
     "license": "Apache-2.0",
     "type": "library",
-    "authors": [
-        {
-            "name": "Klarna AB"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Klarna\\": "src/Klarna/"

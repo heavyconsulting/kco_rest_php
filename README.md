@@ -1,20 +1,6 @@
-# [DEPRECATED] Official Klarna REST PHP SDK
-[![Packagist Version][packagist-image]](https://packagist.org/packages/klarna/kco_rest)
-[![Build Status][travis-image]](https://travis-ci.org/klarna/kco_rest_php)
-[![Coverage Status][coveralls-image]](https://coveralls.io/r/klarna/kco_rest_php?branch=v4.x)
+## Introduction
 
-## SDK Deprecation Warning and Sunsetting
-
-Dear community, the SDK you are currently looking at is now deprecated. These are details related to sunsetting:
-* We intend to archive this repo on June 1 2020 (01/06/20)
-* Until November 1 2020 (01/11/20) high severity security issues found within the latest published version will be fixed. All support will cease after this date.
-* No new builds will follow effective April 20 (20/04/2020) apart from the fixes mentioned above.
-
-### Workarounds
-
-We are making Klarna REST API definition files available in [Swagger / OAS v2](https://swagger.io/specification/v2/) format, under the [Klarna API Reference](https://developers.klarna.com/api/) section on the [Klarna Developer Portal](https://developers.klarna.com/). These will be regularly updated as the APIs evolve.
-You can use tools like https://swagger.io/tools/swagger-codegen/ to generate your own SDKs, client libraries, etc.
-
+This is an unofficial, community maintained fork of the deprecated official Klarna PHP SDK.
 
 ## Shop now. Pay later.
 
@@ -47,13 +33,13 @@ Register here to be able to test your SDK integration before go live:
 To install the PHP SDK from the Central Composer repository use composer:
 
 ```shell
-composer require klarna/kco_rest
+composer require centarro/kco_rest
 ```
 
 Highly recommended to use version tag when installing SDK.
 
 ```shell
-composer require klarna/kco_rest:1.2.3.4
+composer require centarro/kco_rest:1.2.3.4
 ```
 
 Detailed information about the PHP SDK package and a list of available versions can be found here:
@@ -71,7 +57,7 @@ require('vendor/autoload.php');
 
 To install the PHP SDK manually you need to clone the repo to any folder on your machine:
 ```shell
-git clone git@github.com:klarna/kco_rest_php.git /path/to/some/folder/kco_rest_php
+git clone git@github.com:centarro/kco_rest_php.git /path/to/some/folder/kco_rest_php
 ```
 
 Include the SDK into your PHP file using the SDK autoloader:
@@ -142,37 +128,3 @@ Headers : {"Content-Type":["application\/json"],"Date":["Wed, 15 Aug 2018 15:55:
      "payment_method_type" : "INVOICE"
    }
 ```
-
-
-## Questions and feedback
-If you have any questions concerning this product or the implementation,
-please create an issue: https://github.com/klarna/kco_rest_php/issues/new/choose
-
-Use an official Klarna Contact us form (https://klarna.com) if you have a question about the integration.
-
-
-## How to contribute
-At Klarna, we strive toward achieving the highest possible quality for our
-products. Therefore, we require you to follow these guidelines if you wish
-to contribute.
-
-To contribute, the following criteria needs to be fulfilled:
-
-* Description regarding what has been changed and why
-* Pull requests should implement a boxed change
-* All code and documentation must follow the [PSR-2 standard](http://www.php-fig.org/psr/psr-2/)
-* New features and bug fixes must have accompanying unit tests:
-    * Positive tests
-    * Negative tests
-    * Boundary tests (if possible)
-    * No less than 90% decision coverage
-* All tests should pass
-
-
-## License
-Klarna Checkout REST PHP SDK is licensed under
-[Apache License, Version 2.0](http://www.apache.org/LICENSE-2.0)
-
-[packagist-image]: https://img.shields.io/packagist/v/klarna/kco_rest.svg?style=flat
-[travis-image]: https://img.shields.io/travis/klarna/kco_rest_php/v4.x.svg?style=flat
-[coveralls-image]: https://img.shields.io/coveralls/klarna/kco_rest_php/v4.x.svg?style=flat
