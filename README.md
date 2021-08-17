@@ -1,3 +1,5 @@
+![php tests](https://github.com/centarro/kco_rest_php/actions/workflows/php.yml/badge.svg)
+
 ## Introduction
 
 This is an unofficial, community maintained fork of the deprecated official Klarna PHP SDK.
