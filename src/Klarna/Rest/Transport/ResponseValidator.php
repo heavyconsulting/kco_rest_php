@@ -193,8 +193,8 @@ class ResponseValidator
         }
 
         throw new \RuntimeException(
-            'Unexpected reponse HTTP status ' . $this->response->getStatus() .
-            '. Excepted HTTP status should be in 2xx range',
+            'Unexpected response HTTP status ' . $this->response->getStatus() .
+            '. Expected HTTP status should be in 2xx range.',
             $this->response->getStatus()
         );
     }

@@ -47,7 +47,7 @@ class OrderTest extends TestCase
         putenv('ORDER_ID=12345');
         $output = $this->execFile($this->rootPath . '/docs/examples/CheckoutAPI/fetch_checkout.php');
         $this->assertTrue($this->hasException($output));
-        $this->assertTrue($this->isTextPresents('Unexpected reponse HTTP status 404', $output));
+        $this->assertTrue($this->isTextPresents('Unexpected response HTTP status 404', $output));
     }
 
     public function testCreateAndFetch()
@@ -117,6 +117,6 @@ class OrderTest extends TestCase
 
         putenv('PASSWORD=wrong_password');
         $output = $this->execFile($this->rootPath . '/docs/examples/CheckoutAPI/handling_exceptions.php');
-        $this->assertTrue($this->isTextPresents('Unexpected reponse HTTP status 401', $output));
+        $this->assertTrue($this->isTextPresents('Unexpected response HTTP status 401', $output));
     }
 }
