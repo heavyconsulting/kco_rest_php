@@ -35,7 +35,7 @@ class UserAgentTest extends TestCase
     /**
      * Set up the test fixtures
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->agent = new UserAgent();
     }
