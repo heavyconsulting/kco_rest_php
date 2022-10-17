@@ -1,7 +1,7 @@
 {
-    "name": "centarro/kco_rest",
+    "name": "heavyconsulting/kco_rest",
     "description": "Community maintained Klarna PHP SDK",
-    "homepage": "https://github.com/centarro/kco_rest_php",
+    "homepage": "https://github.com/heavyconsulting/kco_rest_php",
     "license": "Apache-2.0",
     "type": "library",
     "autoload": {
